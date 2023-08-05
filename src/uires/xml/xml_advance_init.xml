@@ -1,0 +1,126 @@
+<include>
+	<window pos="60,30,@320,-30" skin="advance.bg_item">
+		<text pos="|0,15,@-1,@-1" offset="-0.5,0" colorText="#000000" font="size:30"
+			text="Communication" msgTransparent="1" />
+		<window id="100001" pos="20,70,-20,@2" colorBkgnd="#979797" msgTransparent="1" />
+		<text pos="{15,[30" colorText="#000000" font="size:20" text="Device IP" msgTransparent="1" />
+		<keyEdit name="device_ip" pos="sib.left@100001:15,[5,sib.right@100001:-15,@30" number="1"
+			readOnly="1" ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+			margin="1,1,1,1" />
+		<text pos="sib.left@100001:15,[30" colorText="#000000" font="size:20" text="Flowmeter Type"
+			msgTransparent="1" />
+		<comboview name="cbv_flowmeter_choose" pos="sib.left@100001:15,[5,sib.right@100001:-15,@30"
+			dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1"
+			ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center"
+			colorText="#000000">
+			<liststyle colorBkgnd="#D3D3D3" margin="1,0,1,1" colorBorder="#000000">
+				<template itemHeight="30" colorSelected="#979797" colorHover="#B2B2B2">
+					<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20"
+						colorText="#000000" />
+				</template>
+			</liststyle>
+		</comboview>
+		<text pos="sib.left@100001:15,[30" colorText="#000000" font="size:20" text="WITS IP"
+			msgTransparent="1" />
+		<keyEdit name="wits_ip" pos="sib.left@100001:15,[5,sib.right@100001:-15,@30" number="1"
+			readOnly="1" ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+			margin="1,1,1,1" />
+		<text pos="sib.left@100001:15,[30" colorText="#000000" font="size:20" text="WITS Port"
+			msgTransparent="1" />
+		<keyEdit name="wits_port" pos="sib.left@100001:15,[5,sib.right@100001:-15,@30" number="1"
+			readOnly="1" ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+			margin="1,1,1,1" />
+		<text pos="sib.left@100001:15,[30" colorText="#000000" font="size:20" text="Alarm IP"
+			msgTransparent="1" />
+		<keyEdit name="alarm_ip" pos="sib.left@100001:15,[5,sib.right@100001:-15,@30" number="1"
+			readOnly="1" ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+			margin="1,1,1,1" />
+		<text pos="sib.left@100001:15,[30" colorText="#000000" font="size:20" text="Alarm Port"
+			msgTransparent="1" />
+		<keyEdit name="alarm_port" pos="sib.left@100001:15,[5,sib.right@100001:-15,@30" number="1"
+			readOnly="1" ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+			margin="1,1,1,1" />
+		<text pos="sib.left@100001:15,[30" colorText="#000000" font="size:20"
+			text="Alarm Interval(minutes)" msgTransparent="1" />
+		<keyEdit name="alarm_interval" pos="sib.left@100001:15,[5,sib.right@100001:-15,@30"
+			number="1" readOnly="1" ncSkin="system.border" align="center" colorText="#000000"
+			font="size:20" margin="1,1,1,1" />
+	</window>
+	<window pos="[60,30,@320,-30" skin="advance.bg_item">
+		<text pos="|0,15,@-1,@-1" offset="-0.5,0" colorText="#000000" font="size:30"
+			text="Calculation" msgTransparent="1" />
+		<window id="100002" pos="20,70,-20,@2" colorBkgnd="#979797" msgTransparent="1" />
+		<text pos="sib.left@100002:15,[30" colorText="#000000" font="size:20" text="Fitting Model"
+			msgTransparent="1" />
+		<comboview name="cbc_calcmodel" pos="sib.left@100002:15,[5,sib.right@100002:-15,@30"
+			dropDown="1" dropHeight="250" animateTime="200" curSel="1" margin="1,1,1,1"
+			ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center"
+			colorText="#000000">
+			<liststyle colorBkgnd="#D3D3D3" margin="1,0,1,1" colorBorder="#000000">
+				<template itemHeight="30" colorSelected="#979797" colorHover="#B2B2B2">
+					<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20"
+						colorText="#000000" />
+				</template>
+			</liststyle>
+			<!--editstyle
+			name="cbv_model_edit" vcenter="1" colorBkgnd="rgb(228,228,228)" ncSkin="main.border"
+			colorText="#000000" align="center" font="size:20" margin="1,1,1,1"/-->
+		</comboview>
+	</window>
+	<window pos="[60,30,@320,-30" skin="advance.bg_item">
+		<text pos="|0,15,@-1,@-1" offset="-0.5,0" colorText="#000000" font="size:30"
+			text="Sensors Setup" msgTransparent="1" />
+		<window id="100003" pos="20,70,-20,@2" colorBkgnd="#979797" msgTransparent="1" />
+		<window name="sensors_obm_wnd" pos="20,[30,-20,@150" margin="2,2,2,2" enable="1"
+			skin="advance.block_item">
+			<mutiImg name="sensors_obm" skin="advance.model" pos="|0,30,@166,@37" indexImg="0"
+				offset="-0.5,0" font="size:22" colorText="#F0F0F0" text="OBM" msgTransparent="1" />
+			<text pos="{0,[20" colorText="#000000" font="size:20" text="ES:" msgTransparent="1" />
+			<keyEdit name="sensors_ES" pos="[5,{0,@100,@30" number="1" readOnly="1"
+				ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+				margin="1,1,1,1" />
+			<text pos="[5,{0" colorText="#000000" font="size:20" text="V" msgTransparent="1" />
+		</window>
+		<window name="sensors_wbm_wnd" pos="20,[30,-20,@200" margin="2,2,2,2" enable="0"
+			skin="advance.block_item">
+			<mutiImg name="sensors_wbm" skin="advance.model" id="1000031" pos="|0,30,@166,@37"
+				offset="-0.5,0" font="size:22" colorText="#F0F0F0" text="WBM" msgTransparent="1" />
+			<text pos="{0,[20" colorText="#000000" font="size:20" text="Cl-:" msgTransparent="1" />
+			<keyEdit name="sensors_Cl-" pos="[5,{0,@100,@30" number="1" readOnly="1"
+				ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+				margin="1,1,1,1" />
+			<text pos="[5,{0" colorText="#000000" font="size:20" text="g/L" msgTransparent="1" />
+			<text pos="sib.left@1000031:0,[20" colorText="#000000" font="size:20" text="PH:"
+				msgTransparent="1" />
+			<keyEdit name="sensors_PH" pos="[5,{0,@100,@30" number="1" readOnly="1"
+				ncSkin="system.border" align="center" colorText="#000000" font="size:20"
+				margin="1,1,1,1" />
+		</window>
+	</window>
+	<window pos="[60,30,@320,-30" skin="advance.bg_item">
+		<text pos="|0,15,@-1,@-1" offset="-0.5,0" colorText="#000000" font="size:30" text="Other"
+			msgTransparent="1" />
+		<window id="100004" pos="20,70,-20,@2" colorBkgnd="#979797" msgTransparent="1" />
+		<text pos="sib.left@100004:15,[30" colorText="#000000" font="size:20"
+			text="Cyclic Clean Start Time" msgTransparent="1" />
+		<dateTimePickerEx name="clean_start_time" id="600001" pos="sib.left@100004:15,[5,@175,@30"
+			colorBkgnd="#F8F8F8" margin="1,1,1,1" ncSkin="system.border" padding="6,0,6,0"
+			dropWidth="0" colorText="#000000" font="size:16" timeEnable="1" />
+		<text pos="sib.left@100004:15,[10" colorText="#000000" font="size:20"
+			text="Repeat Period(days)" msgTransparent="1" />
+		<keyEdit name="clean_interval" pos="{0,[10,@70,@30"
+			number="1" readOnly="1" ncSkin="system.border" align="center" colorText="#000000"
+			font="size:18" margin="1,1,1,1" />
+		<text pos="sib.left@100004:15,[10" colorText="#000000" font="size:20" text="Clean Times"
+			msgTransparent="1" />
+		<keyEdit name="clean_times" pos="sib.left@100004:15,[5,@70,@30"
+			number="1" readOnly="1" ncSkin="system.border" align="center" colorText="#000000"
+			font="size:18" margin="1,1,1,1" />
+		<text pos="sib.left@100004:15,[10" colorText="#000000" font="size:20"
+			text="Next Clean Time" msgTransparent="1" />
+		<text name="next_clean_time" pos="sib.left@100004:15,[5" colorText="rgb(199,56,56)" font="size:18"
+			text="2022/02/05 08:00:06" msgTransparent="1" />
+		<text pos="sib.left@100004:15,[10" colorText="#000000" font="size:20" text="Enable Cyclic Clean" msgTransparent="1"/>
+		<checkex name="enable_cyclic_clean" skin="advance.pump" pos="[10,{0,@51,@32"/>
+	</window>
+</include>

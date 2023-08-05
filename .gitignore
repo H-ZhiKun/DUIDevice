@@ -1,0 +1,6 @@
+.vs
+release
+release64
+enc_temp_folder
+*.zip
+!third_party.zip

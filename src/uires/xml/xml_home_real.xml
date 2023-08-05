@@ -1,0 +1,79 @@
+<include>
+	<comboview name="cbv_model" pos="63,[30,@100,@36" dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:14" align="center" colorText="#000000" colorBkgnd="#D1D1D1">
+		<liststyle colorBkgnd="#D1D1D1" margin="1,0,1,1" colorBorder="#000000">
+			<template itemHeight="36" colorSelected="#979797" colorHover="#B2B2B2">
+				<!-- <button pos="|0,[5,@115,@22" offset="-0.5,0" name="btn_menu" trackMouseEvent="1" skin=""/> -->
+				<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:14" colorText="#000000"/>
+			</template>
+		</liststyle>
+		<!--editstyle name="cbv_model_edit" vcenter="1" colorBkgnd="rgb(228,228,228)" ncSkin="main.border" colorText="#000000" align="center" font="size:20" margin="1,1,1,1"/-->
+	</comboview>
+	<window pos="[5,{-15,@740,@205" skin="home.block0">
+		<text name="text_pv" pos="25,15" colorText="#000000" font="size:24" text="Plastic Viscosity" msgTransparent="1"/>
+		<mutiImg name="muti_pv" skin="home.img_real" pos="{0,[10,@120,@120" indexImg="0" font="size:20" colorText="#000000" text="78" msgTransparent="1"/>
+		<text pos="[40,{0,@85,@20" align="center" colorText="#000000" font="size:16" text="Alert" msgTransparent="1"/>
+		<keyEdit name="pv_alert_up" pos="{0,[5,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_up" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<keyEdit name="pv_alert_down" pos="{0,[10,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_down" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<imgbtn name="btn_pv_units" pos="{0,[10,@80,@30" inset="0,0,20,0" skin="home.btn_units" colorTextPush="#FFFFFF" colorText="#000000" font="size:10" text="mPa·s"/>
+		<text name="text_yp" pos="395,15" colorText="#000000" font="size:24" text="Yield Point" msgTransparent="1"/>
+		<mutiImg name="muti_yp" skin="home.img_real" pos="{0,[10,@120,@120" indexImg="0" font="size:20" colorText="#000000" text="78" msgTransparent="1"/>
+		<text pos="[40,{0,@85,@20" align="center" colorText="#000000" font="size:16" text="Alert" msgTransparent="1"/>
+		<keyEdit name="yp_alert_up" pos="{0,[5,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_up" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<keyEdit name="yp_alert_down" pos="{0,[10,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_down" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<imgbtn name="btn_yp_units" pos="{0,[10,@80,@30" inset="0,0,20,0" skin="home.btn_units" colorTextPush="#FFFFFF" colorText="#000000" font="size:10" text="Pa"/>
+	</window>
+	<window pos="{0,[15,@740,@205" skin="home.block0">
+		<text pos="25,15" colorText="#000000" font="size:24" text="Temp." msgTransparent="1"/>
+		<mutiImg name="muti_temp" skin="home.img_real" pos="{0,[10,@120,@120" indexImg="0" font="size:20" colorText="#000000" msgTransparent="1"/>
+		<text pos="[40,{0,@85,@20" align="center" colorText="#000000" font="size:16" text="Alert" msgTransparent="1"/>
+		<keyEdit name="temp_alert_up" pos="{0,[5,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_up" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<keyEdit name="temp_alert_down" pos="{0,[10,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_down" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<imgbtn name="btn_temp_units" pos="{0,[10,@80,@30" inset="0,0,20,0" skin="home.btn_units" colorTextPush="#FFFFFF" colorText="#000000" font="size:18" text="°C"/>
+		<text pos="395,15" colorText="#000000" font="size:24" text="Mud Density" msgTransparent="1"/>
+		<mutiImg name="muti_density" skin="home.img_real" pos="{0,[10,@120,@120" indexImg="0" font="size:20" colorText="#000000" text="78" msgTransparent="1"/>
+		<text pos="[40,{0,@85,@20" align="center" colorText="#000000" font="size:16" text="Alert" msgTransparent="1"/>
+		<keyEdit name="density_alert_up" pos="{0,[5,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_up" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<keyEdit name="density_alert_down" pos="{0,[10,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_down" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<imgbtn name="btn_density_units" pos="{0,[10,@80,@30" inset="0,0,20,0" skin="home.btn_units" colorTextPush="#FFFFFF" colorText="#000000" font="size:18" text="kg/m³"/>
+	</window>
+	<window pos="{0,[15,@740,@205" skin="home.block0">
+		<text name="text_cl" pos="25,15" colorText="#000000" font="size:24" text="Cl-" msgTransparent="1"/>
+		<mutiImg name="muti_cl" skin="home.img_real" pos="{0,[10,@120,@120" indexImg="0" font="size:20" colorText="#000000" text="78" msgTransparent="1"/>
+		<text pos="[40,{0,@85,@20" align="center" colorText="#000000" font="size:16" text="Alert" msgTransparent="1"/>
+		<keyEdit name="cl_alert_up" pos="{0,[5,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_up" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<keyEdit name="cl_alert_down" pos="{0,[10,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+			<img skin="home.alert_down" pos="2,3" msgTransparent="1"/>
+		</keyEdit>
+		<imgbtn name="btn_cl_units" pos="{0,[10,@80,@30" inset="0,0,20,0" skin="home.btn_units" colorTextPush="#FFFFFF" colorText="#000000" font="size:18" text="g/L"/>
+		<window name="wnd_ph_data" show="1" pos="395,15,-0,-0">
+			<text pos="0,0" colorText="#000000" font="size:24" text="PH" msgTransparent="1"/>
+			<mutiImg name="muti_ph" skin="home.img_real" pos="{0,[10,@120,@120" indexImg="0" font="size:20" colorText="#000000" text="78" msgTransparent="1"/>
+			<text pos="[40,{0,@85,@20" align="center" colorText="#000000" font="size:16" text="Alert" msgTransparent="1"/>
+			<keyEdit name="ph_alert_up" pos="{0,[5,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+				<img skin="home.alert_up" pos="2,3" msgTransparent="1"/>
+			</keyEdit>
+			<keyEdit name="ph_alert_down" pos="{0,[10,@80,@20" number="1" align="center" readOnly="1" ncSkin="system.border" colorText="#676767" font="size:14" margin="1,1,1,1">
+				<img skin="home.alert_down" pos="2,3" msgTransparent="1"/>
+			</keyEdit>
+			<imgbtn name="btn_ph_units" pos="{0,[10,@80,@30" inset="0,0,20,0" skin="home.btn_units" colorTextPush="#FFFFFF" colorText="#000000" font="size:18" text=""/>
+		</window>
+	</window>
+</include>

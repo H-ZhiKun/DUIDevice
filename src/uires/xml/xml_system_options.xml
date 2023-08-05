@@ -1,0 +1,67 @@
+﻿<SOUI name="xml_system_options" width="1075" height="741" resizable="0" wndType="normal" 
+toolWindow="1" 
+appWnd="0" 
+translucent="1" 
+trCtx="xml_system_options"
+>
+	<root cache="1" pos="0,0,-0,-0" skin="system_options.bg">
+		<text pos="404,74" align="center" colorText="#000000" font="bold:1,size:36" text="System Options"/>
+		<comboview id="20001" name="cbv_name" pos="{-103,[60,@208,@42" skin="system_options.combo208" dropDown="1" dropHeight="300" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3" margin="1,0,1,1" colorBorder="#000000">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#C9C9C9">
+				<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<winEdit name="edit_name" show="0" pos="{0,{0,@208,@42" align="center" skin="system_options.edit208" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" />
+		<imgbtn name="btn_new" skin="system_options.new" pos="[9,{11,@22,@22" />
+
+		<dateTimePickerEx name="edit_date" pos="sib.left@20001:0,sib.bottom@20001:24,@208,@42" inset="51,0,0,0" margin="1,1,1,1" ncSkin="system.border" skin="fluid_setup.bg_edit238" align="center" dropWidth="0" colorText="#232323" font="size:20" timeEnable="0" />
+		<winEdit name="edit_location" pos="{0,[24,@208,@42" align="center" skin="system_options.edit208" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" text="2350.00"/>
+		<winEdit name="edit_field" pos="{0,[24,@208,@42" align="center"  skin="system_options.edit208" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" text="123"/>
+		<winEdit name="edit_operator" pos="{0,[24,@208,@42" align="center" skin="system_options.edit208" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" text="2350.00"/>
+		<winEdit name="edit_rig" pos="{0,[24,@208,@42" align="center"  skin="system_options.edit208" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" text="123"/>
+		<comboview id="20004" name="cbv_lan" pos="sib.right@20001:247,sib.top@20001:0,@208,@42" align="center" skin="system_options.combo208" dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3" margin="1,0,1,1" colorBorder="#000000">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#C9C9C9">
+				<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<comboview name="cbv_units" pos="{0,[24,@208,@42" align="center" skin="system_options.combo208" dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3" margin="1,0,1,1" colorBorder="#000000">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#C9C9C9">
+				<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<comboview id="20002" name="cbv_mgt" pos="{0,[24,@208,@42" align="center" skin="system_options.combo208" dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3" margin="1,0,1,1" colorBorder="#000000">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#C9C9C9">
+				<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<imgbtn name="btn_delete" skin="system_options.delete" pos="[9,{11,@20,@22" />
+		<edit id="20003" name="save_path" pos="sib.left@20002:0,sib.bottom@20002:24,@208,@42" align="center" readOnly="1" ncSkin="" margin="1,1,1,1" colorBorder="#979797" colorText="#232323" font="size:20" />
+		<imgbtn name="btn_file" skin="system_options.browser" pos="[9,{11,@22,@20" />
+		<imgbtn name="btn_debug" skin="system_options.pump" pos="sib.left@20003:6,sib.bottom@20003:32,@46,@31" />
+		<imgbtn name="btn_pump" skin="system_options.pump" pos="{0,[36,@46,@31" />
+		<imgbtn name="btn_close" skin="system.close" pos="-53,39,@15,@15" offset="-1,0" />
+		<imgbtn name="btn_ok" skin="system.ok" 	pos="sib.left@20001:168,-106" offset="0,-1" colorTextPush="#FFFFFF" colorText="#000000" font="size:24" text="OK"/>
+		
+		<text pos="sib.left@20001:-23,sib.top@20001:0,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Well Name/Num.:"/>
+		<text pos="sib.left@20001:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Date:"/>
+		<text pos="sib.left@20001:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Location:"/>
+		<text pos="sib.left@20001:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Field:"/>
+		<text pos="sib.left@20001:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Operator:"/>
+		<text pos="sib.left@20001:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Rig Contractor:"/>
+	
+		<text pos="sib.left@20004:-23,sib.top@20004:0,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Language:"/>
+		<text pos="sib.left@20004:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Units:"/>
+		<text pos="sib.left@20004:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Data MGT:"/>
+		<text pos="sib.left@20004:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="File Save Path:"/>
+		<text pos="sib.left@20004:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Commissioning:"/>
+		<text name="pump_title" pos="sib.left@20004:-23,[24,@-1,@42" align="right" offset="-1,0" colorText="#2323236F" font="size:24" text="Pump:"/>
+	</root>
+</SOUI>

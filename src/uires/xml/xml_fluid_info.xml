@@ -1,0 +1,45 @@
+﻿<SOUI name="xml_fluid_info" width="875" height="785" resizable="0" wndType="normal" toolWindow="1" appWnd="0" translucent="1" trCtx="xml_fluid_info">
+	<root cache="1" pos="0,0,-0,-0" skin="fluid_setup.bg">
+		<text pos="|0,74" offset="-0.5,0" align="center" colorText="#000000" font="bold:1,size:36" text="Fluid Information"/>
+		<winEdit id="20001" name="edit_name" pos="|0,[68,@238,@42" align="center" skin="fluid_setup.bg_edit238" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" text="WBM#1"/>
+		<comboview name="cbv_type" pos="{0,[25,@238,@42" skin="fluid_setup.bg_combo238" dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#B2B2B2">
+					<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<winEdit name="edit_density" pos="{0,[25,@134,@42" align="center" skin="fluid_setup.bg_edit134" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" text="2350.00"/>
+		<comboview name="cbv_density" pos="[7,{0,@97,@42" skin="fluid_setup.bg_combo97" dropDown="1" dropHeight="250" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#B2B2B2">
+					<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<winEdit name="edit_temp" pos="sib.left@20001:0,[25,@134,@42" align="center" skin="fluid_setup.bg_edit134" ncSkin="system.border" margin="1,1,1,1" colorText="#232323" font="size:20" text="51.00"/>
+		<comboview name="cbv_temp" pos="[7,{0,@97,@42" skin="fluid_setup.bg_combo97" dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#B2B2B2">
+					<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<comboview name="cbv_active" pos="sib.left@20001:0,[25,@238,@42" skin="fluid_setup.bg_combo238" dropDown="1" dropHeight="150" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#232323">
+			<liststyle colorBkgnd="#D3D3D3">
+				<template itemHeight="42" colorSelected="#B9B9B9" colorHover="#B2B2B2">
+					<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#232323"/>
+				</template>
+			</liststyle>
+		</comboview>
+		<dateTimePickerEx name="date_time" pos="{0,[25,@238,@42" inset="60,0,0,0" margin="1,1,1,1" ncSkin="system.border" skin="fluid_setup.bg_edit238" align="center" dropWidth="0" colorText="#232323" font="size:20" timeEnable="0"/>
+		<imgbtn name="btn_close" skin="system.close" pos="-53,39,@15,@15" offset="-1,0"/>
+		<imgbtn name="btn_ok" skin="system.ok" pos="|0,-107" offset="-0.5,-1" colorTextPush="#FFFFFF" colorText="#000000" font="size:24" text="OK"/>
+		<text pos="sib.left@20001:-25,sib.top@20001:0,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Drilling Fluid Name:"/>
+		<text pos="sib.left@20001:-25,[25,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Drilling Fluid Type:"/>
+		<text pos="sib.left@20001:-25,[25,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Density:"/>
+		<text pos="sib.left@20001:-25,[25,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Test Temperature:"/>
+		<text pos="sib.left@20001:-25,[25,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Sample Source:"/>
+		<text pos="sib.left@20001:-25,[25,@-1,@42" align="right" offset="-1,0" colorText="#232323" font="size:24" text="Test Time:"/>
+	</root>
+</SOUI>

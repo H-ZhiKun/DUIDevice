@@ -1,0 +1,10 @@
+<include>
+	<window name="logs_chk_datalogs" align="center" checked="1" skin="system.chk_left" pos="0,0,@114,@36" colorTextPush="#FFFFFF" colorText="#000000" font="size:16" text="Data Log"/>
+	<window name="logs_chk_oplogs" align="center"  skin="system.chk_right" pos="[0,0,@114,@36" colorTextPush="#FFFFFF" colorText="#000000" font="size:16" text="Op.Log"/>
+	<window name="page_datalogs" show="1" pos="0,36,-0,-0" skin="system.block">
+		<include src="layout:xml_logs_datalogs"/>
+	</window>
+	<window name="page_oplogs" show="0" pos="0,36,-0,-0" skin="system.block">
+		<include src="layout:xml_logs_oplogs"/>
+	</window>
+</include>

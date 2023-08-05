@@ -1,0 +1,44 @@
+<SOUI name="xml_diag" width="1054" height="864"  resizable="0" wndType="normal"
+toolWindow="1"
+appWnd="0"
+translucent="1" 
+trCtx="xml_diag"
+>
+  <root cache="1" skin="diag.bg">
+    <window pos="25,10,-20,-45" >
+		<imgbtn name="btn_close" skin="system.close" pos="-20,10,@15,@15" offset="-1,0" />
+		<text pos="|-5,42"  offset="-0.5,0" colorText="rgb(6,6,6)" font="bold:2,size:24" text="Diagnosis" />	
+		<text pos="20,184" skin="diag.data_bg" />
+		<window id="10" pos="{45,118,@196,@60"   	name="check_hardware" 	skin="diag.check_hardware" />
+		<mutiImg name="hardware_lights"  pos="{66,{33,@119,@14" indexImg="0" msgTransparent="1" skin="diag.lights"/>
+		<window id="11" pos="sib.right@10:33,sib.top@10:0,@196,@60"  	name="check_alarm" 	skin="diag.check_alarm" />
+		<mutiImg name="alarm_lights"  pos="{66,{33,@119,@14" indexImg="0" msgTransparent="1" skin="diag.lights"/>
+		<window id="12" pos="sib.right@11:33,sib.top@10:0,@196,@60"  	name="check_warning" skin="diag.check_warning" />
+		<mutiImg name="warning_lights" pos="{66,{33,@119,@14" indexImg="0" msgTransparent="1" skin="diag.lights"/>
+		<window id="13" pos="sib.right@12:33,sib.top@10:0,@196,@60"  name="check_comm" skin="diag.check_comm" />
+		<mutiImg name="comm_lights" pos="{66,{33,@119,@14" indexImg="0" msgTransparent="1" 	skin="diag.lights"/>
+		<invertCheck pos="42,200,@56,@14" name="btn_time" skin="diag.btn_time"/>
+		<invertCheck pos="{400,200,@55,@14" name="btn_code" skin="diag.btn_code"/>
+		<text 	pos="{100,200,@-1,@14"  colorText="#232323" font="bold:1,size:17" text="Description" />
+		<listview name="lv_info" pos="40,[6,-40,-105" headerHeight="0" >
+			<template itemHeight="-1" colorBkgnd="#00000000" colorSelected="#00000000">
+				<text 	name="text_time" pos="0,16,@-1,@-1" valign="bottom" colorText="#232323" font="size:17" />
+				<text 	pos="[10,16,@-1,@-1" valign="bottom" colorText="#232323" font="size:17" text="~"/>
+				<text 	name="text_time_end" pos="200,16,@-1,@-1" valign="bottom" colorText="#232323" font="size:17"/>
+				<text 	name="text_code" pos="{202,{0,@-1,@-1" valign="bottom" colorText="#232323" font="size:17" />
+				<text 	name="text_des" pos="{100,{0,@-1,@-1" valign="bottom" colorText="#232323" font="size:17" />
+				<text 	pos="0,[8,-0,@1" colorBkgnd="#A1A1A1"/>
+			</template>
+		</listview>
+
+		<text id="1" pos="|10,[19,@-1,@20" colorText="#232323" font="size:17" text="/" />
+		<keyEdit name="page" pos="{-5,{2,@60,@20" align="center" readOnly="1" offset="-1,0" ncSkin="" colorBkgnd="#00000000" colorText="#676767" font="size:17" text="1" margin="1,1,1,1" colorBorder="#AAAAAA" />
+		<imgbtn name="btn_prev" skin="system.prev_page" pos="{-40,{0" offset="-1,0" />
+		<imgbtn name="btn_home" skin="system.home_page" pos="{-20,{0" offset="-1,0" />
+		<text   name="text_total" pos="sib.right@1:5,sib.top@1:1,@60,@20" align="center" colorText="#676767" font="size:17"/>
+		<imgbtn name="btn_next" skin="system.next_page" pos="[20,{0"  />
+		<imgbtn name="btn_end" skin="system.end_page" pos="[20,{0" />
+		<imgbtn pos="|0,-15" 	name="btn_trip" 	enable="0"	skin="diag.btn_trip" 	offset="-0.5,-1" colorText="#FFFFFF" font="size:16" text="Trip Reset"/>
+	</window>
+  </root>
+</SOUI>

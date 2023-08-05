@@ -1,0 +1,49 @@
+<include>
+	<window name="state_bg" pos="23,23,-23,-23" colorBkgnd="#E4E4E4">
+		<!--               home_page  	begin                      -->
+		<window name="home_page" show="1" pos="0,0,-190,-0">
+			<!--               home_type  	begin                  -->
+			<include src="layout:xml_home_type"/>
+			<!--               home_real  	begin                  -->
+			<include src="layout:xml_home_real"/>
+			<!--               home_chart  	begin                  -->
+			<window pos="[25,151,@731,@418" skin="home.block1">
+				<chartLine name="chart_line" pos="0,0,-0,-0" font="size:14" LineColor="#A0A0A032" DataBgColor="#F3F3F3" TipBgColor="#C4C4C4e0" CoordColor="#414141" yTitle="Shear Stress(Pa)" xTitle="Shear Rate(s)" CoordMargin="90,50,90,70"/>
+				<checkex name="checked_NT" checked="1" pos="-90,-90,@120,@20" skin="system.chart_item_120_20" margin="4,0,0,0" colorBorder="#FFDB4D" offset="-1,0" font="size:12" colorText="#000000" colorTextPush="#FFFFFF" text="Newtonian"/>
+				<checkex name="checked_BH" checked="1" pos="{0,{-10,@120,@20" skin="system.chart_item_120_20" margin="4,0,0,0" colorBorder="#ED6D84" offset="0,-1" font="size:12" colorText="#000000" colorTextPush="#FFFFFF" text="Bingham Plastic"/>
+				<checkex name="checked_PL" checked="1" pos="{0,{-10,@120,@20" skin="system.chart_item_120_20" margin="4,0,0,0" colorBorder="#81C079" offset="0,-1" font="size:12" colorText="#000000" colorTextPush="#FFFFFF" text="Power Law"/>
+				<checkex name="checked_HB" checked="1" pos="{0,{-10,@120,@20" skin="system.chart_item_120_20" margin="4,0,0,0" colorBorder="#6A6AD4" offset="0,-1" font="size:12" colorText="#000000" colorTextPush="#FFFFFF" text="Herschel-Bulkley"/>
+			</window>
+			<!--               home_pv_yp_chart  	begin           -->
+			<window pos="{0,[23,@731,@418" skin="home.block1">
+				<chartTime name="chart_time" pos="0,0,-0,-0" font="size:14" LineColor="#A0A0A032" DataBgColor="#F3F3F3" TipBgColor="#C4C4C4e0" CoordColor="#414141" leftTitle="Plastic Viscosity(mPa·s)" rightTitle="Yield Point(Pa)" CoordMargin="90,50,90,50" />
+				<comboview name="cbv_chart_time" pos="90,10,@120,@30" dropDown="1" dropHeight="300" animateTime="200" curSel="1" margin="1,1,1,1" ncSkin="system.border" btnSkin="system.drop" font="size:20" align="center" colorText="#000000">
+					<liststyle colorBkgnd="#D3D3D3" margin="1,0,1,1" colorBorder="#000000">
+						<template itemHeight="30" colorSelected="#979797" colorHover="#B2B2B2">
+							<text name="text" pos="|0,|0,@-1,@-1" offset="-0.5,-0.5" font="size:20" colorText="#000000"/>
+						</template>
+					</liststyle>
+				</comboview>
+				<keyEdit name="chart_time_lmax" pos="78,50,@40,@20" offset="-1,0" number="1" readOnly="1" ncSkin="system.border" align="right" colorText="#000000" font="size:14" margin="1,1,1,1"/>
+				<keyEdit name="chart_time_rmax" pos="-78,50,@40,@20" number="1" readOnly="1" ncSkin="system.border" align="left" colorText="#000000" font="size:14" margin="1,1,1,1"/>
+				<keyEdit name="chart_time_lmin" pos="78,-50,@40,@20" offset="-1,-1" number="1" readOnly="1" ncSkin="system.border" align="right" colorText="#000000" font="size:14" margin="1,1,1,1"/>
+				<keyEdit name="chart_time_rmin" pos="-78,-50,@40,@20" offset="0,-1" number="1" readOnly="1" ncSkin="system.border" align="left" colorText="#000000" font="size:14" margin="1,1,1,1"/>
+			</window>
+			<imgbtn name="btn_stop" skin="home.btn_stop" pos="|290,27,@180,@68" offset="-0.5,0" colorText="#FFFFFF" font="size:36" text="STOP"/>
+			<imgbtn name="btn_clean" skin="home.btn_clean" pos="{-10,{0,@180,@68" offset="-1,0" colorText="#FFFFFF" font="size:36" text="CLEAN"/>
+			<imgbtn name="btn_start" skin="home.btn_start" pos="{-10,{0,@180,@68" offset="-1,0" colorText="#FFFFFF" font="size:36" text="START"/>
+		</window>
+		<!--               logs_page  	begin                      -->
+		<window name="logs_page" show="0" pos="63,115,-205,-18" colorBkgnd="#E4E4E4">
+			<include src="layout:xml_logs"/>
+		</window>
+		<!--               advance_page  	begin                      -->
+		<window name="advance_page" show="0" pos="63,115,-205,-18" colorBkgnd="#E4E4E4">
+			<include src="layout:xml_advance"/>
+		</window>
+		<!--               system_menu  	begin                      -->
+		<include src="layout:xml_system_menu"/>
+	</window>
+	<blurWnd show="0" name="blurWnd" pos="0,0,-0,-0" blur="3" />
+	<imgbtn name="btn_snapshot" skin="system.snapshot" pos="-120,-103" offset="-1,0"/>
+</include>

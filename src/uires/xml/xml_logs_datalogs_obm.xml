@@ -1,0 +1,26 @@
+<include>
+	<window pos="0,0,@228,-0">
+	<text pos="0,0,@163,@44" colorBkgnd="#D2D2D2" align="center" colorText="#000000" font="size:16" text="Time"/>
+	<checkex name="datalog_ES" pos="[4,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_ES_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="ES"/>
+		<text name="datalog_ES_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="V"/>
+	</checkex>
+	<text id="730002" pos="0,[5,-0,@2" colorBkgnd="#BFBFBF"/>
+	<listview name="ES_lvdata" pos="{0,[5,-0,@360" headerHeight="0">
+		<template itemHeight="24" trackMouseEvent="0" colorSelected="#D2D2D200" colorBkgnd="#D2D2D2">
+			<window name="wnd_bg" pos="0,0,-0,-1" colorBkgnd="#D2D2D2">
+			<text name="time" pos="0,|0,@163,@-1" offset="0,-0.5" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="val" pos="[4,|0,@61,@-1" offset="0,-0.5" align="center" valign="center" colorText="#000000" font="size:16"/>
+			</window>
+		</template>
+	</listview>
+	<text pos="{0,[5,-0,@2" colorBkgnd="#BFBFBF"/>
+	<text id="730001" pos="|10,[5,@-1,@14" colorText="#232323" font="size:12" text="/" msgTransparent="1"/>
+	<keyEdit name="ES_page" pos="{-5,{2,@40,@14" number="1" align="center" readOnly="1" offset="-1,0" ncSkin="system.border" colorText="#676767" font="size:12" margin="1,1,1,1" text="1"/>
+	<text name="ES_total" pos="sib.right@730001:5,sib.top@730001:1,@40,@14" align="center" colorText="#676767" font="size:12" msgTransparent="1" text="1"/>
+	<imgbtn name="ES_home" skin="system.home_page" pos="0,{0,@-1,@14" />
+	<imgbtn name="ES_prev" skin="system.prev_page" pos="[15,{0,@-1,@14" />
+	<imgbtn name="ES_end" skin="system.end_page" pos="-0,{0,@-1,@14" offset="-1,0"/>
+	<imgbtn name="ES_next" skin="system.next_page" pos="{-15,{0,@-1,@14" offset="-1,0"/>
+	</window>
+</include>

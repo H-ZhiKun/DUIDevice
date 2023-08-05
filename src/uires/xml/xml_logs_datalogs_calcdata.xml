@@ -1,0 +1,98 @@
+<include>
+	<text pos="0,0,@163,@44" colorBkgnd="#D2D2D2" align="center" colorText="#000000" font="size:16" text="Time"/>
+	<checkex name="datalog_AvgTemp" pos="[15,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_AvgTemp_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="Temp."/>
+		<text name="datalog_AvgTemp_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="℃"/>
+	</checkex>
+	<checkex name="datalog_AvgPress" pos="[7,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_AvgPress_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="Press."/>
+		<text name="datalog_AvgPress_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="kPa"/>
+	</checkex>
+	<text pos="[15,sib.top@700003:0,@521,@20" colorBkgnd="#D2D2D2" align="center" colorText="#000000" font="size:16" text="RPM"/>
+	<checkex name="datalog_R600" pos="{0,[3,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R600"/>
+	<checkex name="datalog_R300" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R300"/>
+	<checkex name="datalog_R200" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R200"/>
+	<checkex name="datalog_R100" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R100"/>
+	<checkex name="datalog_R60" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R60"/>
+	<checkex name="datalog_R30" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R30"/>
+	<checkex name="datalog_R20" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R20"/>
+	<checkex name="datalog_R10" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R10"/>
+	<checkex name="datalog_R6" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R6"/>
+	<checkex name="datalog_R3" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R3"/>
+	<checkex name="datalog_R0" pos="[7,{0,@41,@21" align="center" skin="logs.btn41" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="R0"/>
+	<text pos="[15,sib.top@700003:0,@167,@20" colorBkgnd="#D2D2D2" align="center" colorText="#000000" font="size:16" text="Density    kg/m³"/>
+	<checkex name="datalog_MaxDensity" pos="{0,[3,@51,@21" align="center" skin="logs.btn51" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="Max"/>
+	<checkex name="datalog_AvgDensity" pos="[7,{0,@51,@21" align="center" skin="logs.btn51" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="Avg"/>
+	<checkex name="datalog_MinDensity" pos="[7,{0,@51,@21" align="center" skin="logs.btn51" colorTextPush="#FFFFFF" colorText="#000000" font="size:12" text="Min"/>
+	<checkex name="datalog_AV" pos="[15,sib.top@700003:0,@41,@44" skin="logs.btnh44">
+		<text name="datalog_AV_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="AV"/>
+		<text name="datalog_AV_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="mPa·s"/>
+	</checkex>
+	<checkex name="datalog_PV" pos="[7,{0,@41,@44" skin="logs.btnh44">
+		<text name="datalog_PV_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="PV"/>
+		<text name="datalog_PV_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="mPa·s"/>
+	</checkex>
+	<checkex name="datalog_YP" pos="[7,{0,@41,@44" skin="logs.btnh44">
+		<text name="datalog_YP_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="YP"/>
+		<text name="datalog_YP_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="Pa"/>
+	</checkex>
+	<checkex name="datalog_nPL" pos="[7,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_nPL_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="nPL"/>
+	</checkex>
+	<checkex name="datalog_KPL" pos="[7,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_KPL_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="KPL"/>
+		<text name="datalog_KPL_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="Pa·sⁿ"/>
+	</checkex>
+	<checkex name="datalog_nHB" pos="[7,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_nHB_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="nHB"/>
+	</checkex>
+	<checkex name="datalog_KHB" pos="[7,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_KHB_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="KHB"/>
+		<text name="datalog_KHB_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="Pa·sⁿ"/>
+	</checkex>
+	<checkex name="datalog_Tau0" pos="[7,{0,@41,@44" skin="logs.btnh44">
+		<text name="datalog_Tau0_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="Ty"/>
+		<text name="datalog_Tau0_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="Pa"/>
+	</checkex>
+	
+	<text id="700002" pos="0,[5,-0,@2" colorBkgnd="#BFBFBF"/>
+	<listview name="datalog_lvdata" pos="0,[5,-0,@360" headerHeight="0">
+		<template itemHeight="24" trackMouseEvent="0" colorSelected="#D2D2D200" colorBkgnd="#D2D2D2">
+			<window name="wnd_bg" pos="0,0,-0,-1" colorBkgnd="#D2D2D2">
+			<text name="time" pos="0,|0,@163,@-1" offset="0,-0.5" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="temp_avg" pos="[15,{0,@61,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="press_avg" pos="[7,{0,@61,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R600" pos="[15,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R300" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R200" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R100" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R60" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R30" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R20" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R10" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R6" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R3" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="R0" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="den_max" pos="[15,{0,@51,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="den_avg" pos="[7,{0,@51,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="den_min" pos="[7,{0,@51,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="av" pos="[15,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="pv" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="yp" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="npl" pos="[7,{0,@61,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="kpl" pos="[7,{0,@61,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="nhb" pos="[7,{0,@61,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="khb" pos="[7,{0,@61,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="ty" pos="[7,{0,@41,@-1" align="center" valign="center" colorText="#000000" font="size:16"/>
+			</window>
+		</template>
+	</listview>
+	<text pos="sib.left@700002:0,[5,sib.right@700002:0,@2" colorBkgnd="#BFBFBF"/>
+	<text id="700001" pos="|10,[10,@-1,@20" colorText="#232323" font="size:17" text="/" msgTransparent="1"/>
+	<keyEdit name="datalog_page" pos="{-5,{2,@60,@20" number="1" align="center" readOnly="1" offset="-1,0" ncSkin="system.border" colorText="#676767" font="size:17" margin="1,1,1,1"/>
+	<imgbtn name="datalog_prev" skin="system.prev_page" pos="{-40,{0" offset="-1,0"/>
+	<imgbtn name="datalog_home" skin="system.home_page" pos="{-20,{0" offset="-1,0"/>
+	<text name="datalog_total" pos="sib.right@700001:5,sib.top@700001:1,@60,@20" align="center" colorText="#676767" font="size:17" msgTransparent="1"/>
+	<imgbtn name="datalog_next" skin="system.next_page" pos="[20,{0"/>
+	<imgbtn name="datalog_end" skin="system.end_page" pos="[20,{0"/>
+</include>

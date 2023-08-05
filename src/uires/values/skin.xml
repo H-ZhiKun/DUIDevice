@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<skin>
+	<imglist name="system.logo"	src="img:system.logo" states="1"/>
+  	<imglist name="system.border"	src="img:system.border" states="2"/>
+	<imglist name="system.drop"	src="img:system.drop" states="3"/>
+	<imglist name="system.snapshot"	src="img:system.snapshot" states="3"/>
+	<imglist name="system.setup"	src="img:system.setup" states="3"/>
+	<imglist name="system.menu"	src="img:system.menu" states="3"/>
+	<imglist name="system.bg_menu"	src="img:system.bg_menu" states="1"/>
+	<imglist name="system.menu_item"	src="img:system.menu_item" states="3"/>
+	<imglist name="system.home_page"	src="img:system.home_page" states="3"/>
+	<imglist name="system.end_page"		src="img:system.end_page" states="3"/>
+	<imglist name="system.prev_page"	src="img:system.prev_page" states="3"/>
+	<imglist name="system.next_page"	src="img:system.next_page" states="3"/>
+	<imglist name="system.chk_left"	src="img:system.chk_left" states="3"/>
+	<imglist name="system.chk_right"	src="img:system.chk_right" states="3"/>
+	<imglist name="system.block"	src="img:system.block" states="1"/>
+	<imglist name="system.search"		src="img:system.search" states="3"/>
+	<imglist name="system.close"	src="img:system.close" states="3"/>
+	<imglist name="system.ok"		src="img:system.ok" states="3"/>
+	<imglist name="system.bg_message"		src="img:system.bg_message" states="1"/>
+	<imglist name="system.warning"		src="img:system.warning" states="1"/>
+	<imglist name="system.chart_item_110_30"		src="img:system.chart_item_110_30" states="3"/>
+	<imglist name="system.chart_item_120_20"		src="img:system.chart_item_120_20" states="3"/>
+	
+  	<imglist name="login.logo"	src="img:login.logo" states="1"/>
+	<imglist name="login.bg"	src="img:login.bg" states="1"/>
+	<imglist name="login.img_user"	src="img:login.img_user" states="1"/>
+	<imglist name="login.img_password"	src="img:login.img_password" states="1"/>
+	<imglist name="login.btn_close"	src="img:login.btn_close" states="3"/>
+	<imglist name="login.btn_login"	src="img:login.btn_login" states="3"/>
+	
+
+	<imglist name="home.bg_type"	src="img:home.bg_type" states="1"/>
+	<imglist name="home.block0"	src="img:home.block0" states="1"/>
+	<imglist name="home.block1"	src="img:home.block1" states="1"/>
+	<imglist name="home.img_real"	src="img:home.img_real" states="3"/>
+	<imglist name="home.alert_up"	src="img:home.alert_up" states="1"/>
+	<imglist name="home.alert_down"	src="img:home.alert_down" states="1"/>
+	<imglist name="home.btn_units"	src="img:home.btn_units" states="3"/>
+	<imglist name="home.btn_start"	src="img:home.btn_start" states="3"/>
+	<imglist name="home.btn_stop"	src="img:home.btn_stop" states="3"/>
+	<imglist name="home.btn_clean"	src="img:home.btn_clean" states="3"/>
+	
+	<imglist name="keyboard.bg"	src="img:keyboard.bg" states="1"/>
+	<imglist name="keyboard.backup"	src="img:keyboard.backup" states="3"/>
+	<imglist name="keyboard.enter"	src="img:keyboard.enter" states="3"/>
+	<imglist name="keyboard.close"	src="img:keyboard.close" states="3"/>
+	<imglist name="keyboard.key"	src="img:keyboard.key" states="3"/>
+	
+	<imglist name="logs.export"		src="img:logs.export" states="3"/>
+	<imglist name="logs.prev_group" src="img:logs.prev_group" states="3"/>
+	<imglist name="logs.next_group" src="img:logs.next_group" states="3"/>
+	<imglist name="logs.btn41" src="img:logs.btn41" states="3"/>
+	<imglist name="logs.btn51" src="img:logs.btn51" states="3"/>
+	<imglist name="logs.btn61" src="img:logs.btn61" states="3"/>
+	<imglist name="logs.btnh44" src="img:logs.btnh44" states="3"/>
+	
+	<imglist name="advance.pump"		src="img:advance.pump" states="3"/>
+	<imglist name="advance.bg_item"		src="img:advance.bg_item" states="1"/>
+	<imglist name="advance.block_item"		src="img:advance.block_item" states="1"/>
+	<imglist name="advance.model"		src="img:advance.model" states="3"/>
+	
+	<imglist name="diag.bg" 		src="img:diag.bg" 			states="1"/>
+	<imglist name="diag.data_bg" 		src="img:diag.data_bg" 			states="1"/>
+	<imglist name="diag.lights" 		src="img:diag.lights" 			states="2"/>
+
+	<imglist name="diag.btn_code" 		src="img:diag.btn_code" 		states="4"/>
+	<imglist name="diag.btn_time" 		src="img:diag.btn_time" 		states="4 "/>
+	<imglist name="diag.btn_trip" 		src="img:diag.btn_trip" 		states="4"/>
+	<imglist name="diag.check_alarm" 	src="img:diag.check_alarm" 		states="3"/>
+	<imglist name="diag.check_comm" 	src="img:diag.check_comm" 		states="3"/>
+	<imglist name="diag.check_hardware" src="img:diag.check_hardware" 	states="3"/>
+	<imglist name="diag.check_warning" 	src="img:diag.check_warning" 	states="3"/>
+	
+	<imglist name="fluid_setup.bg"          src="img:fluid_setup.bg"          states="1"/>
+	<imglist name="fluid_setup.bg_combo97"  src="img:fluid_setup.bg_combo97"  states="1"/>
+	<imglist name="fluid_setup.bg_combo238" src="img:fluid_setup.bg_combo238" states="1"/>
+	<imglist name="fluid_setup.bg_edit134"  src="img:fluid_setup.bg_edit134"  states="1"/>
+	<imglist name="fluid_setup.bg_edit238"  src="img:fluid_setup.bg_edit238"  states="1"/>
+																   
+	<imglist name="system_options.bg" 		src="img:system_options.bg"			states="1"/>
+	<imglist name="system_options.combo208" 	src="img:system_options.combo208"		states="1"/>
+	<imglist name="system_options.edit208" 	src="img:system_options.edit208"		states="1"/>
+	<imglist name="system_options.browser"  src="img:system_options.browser"	states="3"/>
+	<imglist name="system_options.delete"   src="img:system_options.delete"		states="3"/>
+	<imglist name="system_options.pump" 	src="img:system_options.pump"		states="3"/>
+	<imglist name="system_options.new" 	src="img:system_options.new"		states="3"/>
+</skin>

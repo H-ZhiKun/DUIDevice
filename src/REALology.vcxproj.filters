@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{286b8bff-e8ac-4eb7-bf1e-bc660060b529}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4d86046a-565d-4fcc-9032-a17891e524e6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6a8a54fe-58c3-49a9-954f-8ad1d292ae71}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="SoUI Resource">
+      <UniqueIdentifier>{b9544b4d-8b7e-4735-b5de-68cc4d59606c}</UniqueIdentifier>
+      <Extensions>idx;xml;png;gif;jpg;ico;lua;bmp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="REALology.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\MainDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SWinEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ConcurrentTaskQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database\MysqlClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database\MysqlConnectionPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SKeyEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SMutiImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SRotateWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\KeyboardDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SCheckBoxEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SDateTimePickerEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SChartLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SChartReal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SChartTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SBlurWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SChartLogs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\DiagDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extensions\SInvertCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\FluidInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\SystemOptionsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\MessageDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="analysis\AnalysisSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\LoginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\RestoreDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppFrameworkImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modbus\DeviceBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modbus\ModbusDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="REALology.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\MainDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SWinEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ConcurrentTaskQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\LockFreeQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\NonCopyable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TaskQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="database\MysqlClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="database\MysqlConnectionPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SCoordAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SKeyEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SMutiImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SRotateWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\KeyboardDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SCheckBoxEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\SArrayAdapter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\SComboViewAdapter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SDateTimePickerEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SChartLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SChartReal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SChartTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SBlurWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SChartLogs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\DiagDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\DiagAdapter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extensions\SInvertCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\FluidInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\SystemOptionsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\MessageDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\HttpClient.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="analysis\AnalysisSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\OpLogsAdapter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\DataLogsAdapter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\SensorsAdapter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\LoginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\RestoreDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TcpClient.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppFramework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppFrameworkImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modbus\DeviceBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modbus\ModbusDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\soui_res.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cpp.hint" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="uires\uidef\init.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\values\color.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\values\skin.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\values\string.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_main.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\Translator\lang_cn.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\Translator\lang_jp.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="uires\image\soui.ico">
+      <Filter>SoUI Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="uires\uires.idx">
+      <Filter>SoUI Resource</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

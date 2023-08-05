@@ -1,0 +1,16 @@
+<include>
+	<img pos="0,0,-0,-0" skin="login.bg" msgTransparent="1"/>
+	<imgbtn name="login_btn_close" skin="login.btn_close" pos="-10,10,@20,@20" offset="-1,0"/>
+	<img pos="-115,116" offset="-1,0" skin="login.logo" msgTransparent="1" />
+
+	<window pos="-215,300,@334,@63" offset="-1,0" >
+		<img pos="0,0" skin="login.img_user" msgTransparent="1"/>
+		<winEdit name="winedit_user" pos="90,0,-30,@63" colorText="#000000" font="size:30" maxBuf="10" text="admin"/>
+	</window>
+	<window pos="{0,[18,@334,@63" >
+		<img pos="0,0" skin="login.img_password" msgTransparent="1"/>
+		<winEdit name="winedit_password" pos="90,0,-30,@63" password="1" colorText="#000000" font="size:30" maxBuf="10" text="admin"/>
+	</window>
+	<imgbtn name="login_btn_login" skin="login.btn_login" pos="{0,[18" colorText="#FFFFFF" font="size:30" text="LOGIN"/>
+	<text pos="|0,-42" offset="-0.5,-1" align="center" colorText="#9D9D9D" font="size:24" text="www.vertechs.com" msgTransparent="1"/>
+</include>

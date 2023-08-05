@@ -1,0 +1,31 @@
+<include>
+	<dateTimePickerEx name="datalog_timestart" pos="30,15,@160,@42" colorBkgnd="#F8F8F8" margin="1,1,1,1" ncSkin="system.border" padding="8,0,8,0" dropWidth="0" colorText="#000000" font="size:14" timeEnable="1"/>
+	<text pos="[0,{0,@40,@40" align="center" colorText="#000000" font="size:14" text="To" msgTransparent="1"/>
+	<dateTimePickerEx name="datalog_timeend" pos="[0,{0,@160,@42" colorBkgnd="#F8F8F8" margin="1,1,1,1" ncSkin="system.border" padding="8,0,8,0" dropWidth="0" colorText="#000000" font="size:14" timeEnable="1"/>
+	<imgbtn name="datalog_search" skin="system.search" pos="[10,{-1"/>
+	<imgbtn name="datalog_export" skin="logs.export" pos="[10,{0"/>
+	<keyEdit name="datalog_comments" pos="[40,{1,-200,@42" useTabTip="1" inset="10,0,10,0" readOnly="1" margin="1,1,1,1" ncSkin="system.border" align="left" colorText="#000000" font="size:16" cueColor="#00000070" cueText="Comments"/>
+	<dateTimePickerEx name="datalog_comment_date" pos="-30,15,@160,@42" offset="-1,0" enable="0" margin="1,1,1,1" ncSkin="system.border" padding="8,0,8,0" dropWidth="0" colorText="#000000" font="size:14" timeEnable="1"/>
+	<!--  chart group   -->
+	<text name="datalog_title0" pos="70,[10,@120,@20" align="center" margin="1,1,1,1" colorText="#000000" font="size:12" />
+	<text name="datalog_title1" pos="[10,{0,@120,@20" align="center" margin="1,1,1,1" colorText="#000000" font="size:12" />
+	<text name="datalog_title2" pos="[10,{0,@120,@20" align="center" margin="1,1,1,1" colorText="#000000" font="size:12" />
+	<text name="datalog_title3" pos="[10,{0,@120,@20" align="center" margin="1,1,1,1" colorText="#000000" font="size:12" />
+	<text name="datalog_title4" pos="[10,{0,@120,@20" align="center" margin="1,1,1,1" colorText="#000000" font="size:12" />
+	<text name="datalog_title5" pos="[10,{0,@120,@20" align="center" margin="1,1,1,1" colorText="#000000" font="size:12" />
+	<text name="datalog_title6" pos="[10,{0,@120,@20" align="center" margin="1,1,1,1" colorText="#000000" font="size:12" />
+
+	<chartLogs id="700000" name="chart_datalog" DataBgColor="#F3F3F3" CoordColor="#414141" TipBgColor="#C4C4C4e0" CommentColor="#ED6D84" LineColor="#A0A0A032" pos="0,{0,-0,@300" CoordMargin="70,20,70,30" font="size:14" />
+	<imgbtn name="datalog_tableft" pos="25,[42,@15,@13" colorBkgnd="#D2D2D2" offset="-0.5,-0.5" skin="logs.prev_group"/>
+	<imgbtn name="datalog_tabright" pos="-25,{0,@15,@13" colorBkgnd="#D2D2D2" offset="-0.5,0" skin="logs.next_group"/>
+
+	<window name="datalog_record" show="1" pos="50,sib.bottom@700000:20,-50,-0">
+		<include src="layout:xml_logs_datalogs_calcdata"/>
+	</window>
+	<window name="datalog_wbm" show="0" pos="50,sib.bottom@700000:20,-50,-0">
+		<include src="layout:xml_logs_datalogs_wbm"/>
+	</window>
+	<window name="datalog_obm" show="0" pos="50,sib.bottom@700000:20,-50,-0">
+		<include src="layout:xml_logs_datalogs_obm"/>
+	</window>
+</include>

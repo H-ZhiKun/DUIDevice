@@ -1,0 +1,14 @@
+﻿<SOUI name="xml_message" width="780" height="575"  resizable="0" wndType="normal"
+toolWindow="1"
+appWnd="0"
+translucent="1" 
+trCtx="xml_message"
+>
+  <root cache="1" pos="0,0,-0,-0" skin="system.bg_message">
+	<text pos="50,50,@66,@53" skin="system.warning"/>
+	<text name="title" pos="[20,76,@-1,@-1" offset="0,-0.5" colorText="#000000" font="bold:1,size:36" />
+	<text name="des" pos="|-10,|0,@-1,@-1" colorText="#000000" offset="-0.5,-0.5" multiLines="1" font="size:30" />
+	<imgbtn name="btn_close" skin="system.close" pos="-53,39,@15,@15" offset="-1,0" />
+	<imgbtn name="btn_ok" skin="system.ok" 	pos="|-10,-106" offset="-0.5,-1" colorTextPush="#FFFFFF" colorText="#000000" font="size:24" text="OK"/>
+  </root>
+</SOUI>

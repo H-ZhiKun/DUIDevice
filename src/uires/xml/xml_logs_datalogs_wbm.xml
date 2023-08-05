@@ -1,0 +1,49 @@
+<include>
+	<window pos="0,0,@228,-0">
+	<text pos="0,0,@163,@44" colorBkgnd="#D2D2D2" align="center" colorText="#000000" font="size:16" text="Time"/>
+	<checkex name="datalog_PH" pos="[4,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_PH_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="PH"/>
+	</checkex>
+	<text id="710002" pos="0,[5,-0,@2" colorBkgnd="#BFBFBF"/>
+	<listview name="PH_lvdata" pos="sib.left@710002:0,[5,sib.right@710002:0,@360" headerHeight="0">
+		<template itemHeight="24" trackMouseEvent="0" colorSelected="#D2D2D200" colorBkgnd="#D2D2D2">
+			<window name="wnd_bg" pos="0,0,-0,-1" colorBkgnd="#D2D2D2">
+			<text name="time" pos="0,|0,@163,@-1" offset="0,-0.5" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="val" pos="[4,|0,@61,@-1" offset="0,-0.5" align="center" valign="center" colorText="#000000" font="size:16"/>
+			</window>
+		</template>
+	</listview>
+	<text pos="sib.left@710002:0,[5,sib.right@710002:0,@2" colorBkgnd="#BFBFBF"/>
+	<text id="710001" pos="|10,[5,@-1,@14" colorText="#232323" font="size:12" text="/" msgTransparent="1"/>
+	<keyEdit name="PH_page" pos="{-5,{2,@40,@14" number="1" align="center" readOnly="1" offset="-1,0" ncSkin="system.border" colorText="#676767" font="size:12" margin="1,1,1,1" text="1"/>
+	<text name="PH_total" pos="sib.right@710001:5,sib.top@710001:1,@40,@14" align="center" colorText="#676767" font="size:12" msgTransparent="1" text="1"/>
+	<imgbtn name="PH_home" skin="system.home_page" pos="0,{0,@-1,@14" />
+	<imgbtn name="PH_prev" skin="system.prev_page" pos="[15,{0,@-1,@14" />
+	<imgbtn name="PH_end" skin="system.end_page" pos="-0,{0,@-1,@14" offset="-1,0"/>
+	<imgbtn name="PH_next" skin="system.next_page" pos="{-15,{0,@-1,@14" offset="-1,0"/>
+	</window>
+	<window pos="[60,0,@228,-0">
+	<text pos="0,0,@163,@44" colorBkgnd="#D2D2D2" align="center" colorText="#000000" font="size:16" text="Time"/>
+	<checkex name="datalog_Cl-" pos="[4,{0,@61,@44" skin="logs.btn61">
+		<text name="datalog_Cl-_text1" pos="|0,2,@-1,@-1" offset="-0.5,0" align="center" colorText="#000000" font="size:12" text="Cl-"/>
+		<text name="datalog_Cl-_text2" pos="|0,-2,@-1,@-1" offset="-0.5,-1" align="center" colorText="#000000" font="size:12" text="g/L"/>
+	</checkex>
+	<text id="720002" pos="0,[5,-0,@2" colorBkgnd="#BFBFBF"/>
+	<listview name="Cl-_lvdata" pos="sib.left@720002:0,[5,sib.right@720002:0,@360" headerHeight="0">
+		<template itemHeight="24" trackMouseEvent="0" colorSelected="#D2D2D200" colorBkgnd="#D2D2D2">
+			<window name="wnd_bg" pos="0,0,-0,-1" colorBkgnd="#D2D2D2">
+			<text name="time" pos="0,|0,@163,@-1" offset="0,-0.5" align="center" valign="center" colorText="#000000" font="size:16"/>
+			<text name="val" pos="[4,|0,@61,@-1" offset="0,-0.5" align="center" valign="center" colorText="#000000" font="size:16"/>
+			</window>
+		</template>
+	</listview>
+	<text pos="sib.left@720002:0,[5,sib.right@720002:0,@2" colorBkgnd="#BFBFBF"/>
+	<text id="720001" pos="|10,[5,@-1,@14" colorText="#232323" font="size:12" text="/" msgTransparent="1"/>
+	<keyEdit name="Cl-_page" pos="{-5,{2,@40,@14" number="1" align="center" readOnly="1" offset="-1,0" ncSkin="system.border" colorText="#676767" font="size:12" margin="1,1,1,1" text="1"/>
+	<text name="Cl-_total" pos="sib.right@720001:5,sib.top@720001:1,@40,@14" align="center" colorText="#676767" font="size:12" msgTransparent="1" text="1"/>
+	<imgbtn name="Cl-_home" skin="system.home_page" pos="0,{0,@-1,@14" />
+	<imgbtn name="Cl-_prev" skin="system.prev_page" pos="[15,{0,@-1,@14" />
+	<imgbtn name="Cl-_end" skin="system.end_page" pos="-0,{0,@-1,@14" offset="-1,0"/>
+	<imgbtn name="Cl-_next" skin="system.next_page" pos="{-15,{0,@-1,@14" offset="-1,0"/>
+	</window>
+</include>

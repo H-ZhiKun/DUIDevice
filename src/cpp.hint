@@ -1,0 +1,5 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define EVENT_MAP_BEGIN() public: virtual BOOL _HandleEvent(SOUI::EventArgs *pEvt) { UINT uCode = pEvt->GetID();
+#define EVENT_NAME_COMMAND(name, func) if (SOUI::EVT_CMD == uCode && pEvt->nameFrom!= NULL && wcscmp(pEvt->nameFrom,name)==0) { pEvt->bubbleUp = false; func(); return !pEvt->bubbleUp; }

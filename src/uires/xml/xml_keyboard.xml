@@ -1,0 +1,25 @@
+<SOUI name="xml_keyboard" width="478" height="364"  resizable="0" wndType="normal"
+toolWindow="1"
+appWnd="0"
+translucent="1" 
+trCtx="xml_keyboard"
+>
+  <root cache="1" >
+    <caption pos="0,0,-0,-0"  skin="keyboard.bg">
+		<imgbtn name="btn_key1" pos="53,55" skin="keyboard.key"  colorText="#000000" font="size:30" text="1"/>
+		<imgbtn name="btn_key2" pos="[10,{0" skin="keyboard.key"  colorText="#000000" font="size:30" text="2"/>
+		<imgbtn name="btn_key3" pos="[10,{0" skin="keyboard.key"  colorText="#000000" font="size:30" text="3"/>
+		<imgbtn name="btn_key4" pos="53,[10" skin="keyboard.key"  colorText="#000000" font="size:30" text="4"/>
+		<imgbtn name="btn_key5" pos="[10,{0" skin="keyboard.key"  colorText="#000000" font="size:30" text="5"/>
+		<imgbtn name="btn_key6" pos="[10,{0" skin="keyboard.key"  colorText="#000000" font="size:30" text="6"/>
+		<imgbtn name="btn_key7" pos="53,[10" skin="keyboard.key"  colorText="#000000" font="size:30" text="7"/>
+		<imgbtn name="btn_key8" pos="[10,{0" skin="keyboard.key"  colorText="#000000" font="size:30" text="8"/>
+		<imgbtn name="btn_key9" pos="[10,{0" skin="keyboard.key"  colorText="#000000" font="size:30" text="9"/>
+		<imgbtn name="btn_dot" pos="53,[10" skin="keyboard.key"  colorText="#000000" font="size:30" text="."/>
+		<imgbtn name="btn_key0" pos="[10,{0" skin="keyboard.key"  colorText="#000000" font="size:30" text="0"/>
+		<imgbtn name="btn_bk" pos="[10,{0" skin="keyboard.backup" />
+		<imgbtn name="btn_enter" pos="|0,[10" offset="-0.5,0" skin="keyboard.enter" />
+		<imgbtn name="btn_close" pos="-18,13" offset="-1,0" skin="keyboard.close" />
+	</caption>
+  </root>
+</SOUI>

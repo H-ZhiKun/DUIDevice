@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6D90B120-2B89-4A14-9D3C-1C59D944F2D1}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>..\release64\</IntDir>
+    <OutDir>..\bin64\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(THIRD_PARTY)\spdlog\include;$(THIRD_PARTY)\xlnt\include;$(THIRD_PARTY)\opencv\include;$(THIRD_PARTY)\modbus\include;$(THIRD_PARTY)\boost\include;$(THIRD_PARTY)\jsoncpp\include;$(THIRD_PARTY)\mysql\include;./analysis;./modbus;./adapter;./database;./extensions;./utils;./layout;./;$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <Optimization>MaxSpeed</Optimization>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(THIRD_PARTY)\spdlog\lib;$(THIRD_PARTY)\xlnt\lib;$(THIRD_PARTY)\opencv\lib;$(THIRD_PARTY)\modbus\lib;$(THIRD_PARTY)\jsoncpp\lib;$(THIRD_PARTY)\mysql\lib\vs14;$(SOUIPATH)\bin64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilities.lib;soui.lib;mysqlcppconn.lib;jsoncpp_static.lib;modbus_x64.lib;opencv_world460.lib;xlnt.lib;spdlog.lib;fmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(SOUIPATH)\soui-sys-resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="analysis\AnalysisSession.cpp" />
+    <ClCompile Include="AppFrameworkImpl.cpp" />
+    <ClCompile Include="database\MysqlClient.cpp" />
+    <ClCompile Include="database\MysqlConnectionPool.cpp" />
+    <ClCompile Include="modbus\DeviceBase.cpp" />
+    <ClCompile Include="extensions\SBlurWindow.cpp" />
+    <ClCompile Include="extensions\SChartLine.cpp" />
+    <ClCompile Include="extensions\SChartLogs.cpp" />
+    <ClCompile Include="extensions\SChartReal.cpp" />
+    <ClCompile Include="extensions\SChartTime.cpp" />
+    <ClCompile Include="extensions\SCheckBoxEx.cpp" />
+    <ClCompile Include="extensions\SDateTimePickerEx.cpp" />
+    <ClCompile Include="extensions\SInvertCheck.cpp" />
+    <ClCompile Include="extensions\SKeyEdit.cpp" />
+    <ClCompile Include="extensions\SMutiImage.cpp" />
+    <ClCompile Include="extensions\SRotateWindow.cpp" />
+    <ClCompile Include="extensions\SWinEdit.cpp" />
+    <ClCompile Include="layout\DiagDlg.cpp" />
+    <ClCompile Include="layout\FluidInfoDlg.cpp" />
+    <ClCompile Include="layout\KeyboardDlg.cpp" />
+    <ClCompile Include="layout\LoginDlg.cpp" />
+    <ClCompile Include="layout\MainDlg.cpp" />
+    <ClCompile Include="layout\MessageDlg.cpp" />
+    <ClCompile Include="layout\RestoreDlg.cpp" />
+    <ClCompile Include="layout\SystemOptionsDlg.cpp" />
+    <ClCompile Include="modbus\ModbusDevice.cpp" />
+    <ClCompile Include="REALology.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="utils\ConcurrentTaskQueue.cpp" />
+    <ClCompile Include="utils\Logger.cpp" />
+    <ClCompile Include="utils\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="REALology.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adapter\DataLogsAdapter.hpp" />
+    <ClInclude Include="adapter\DiagAdapter.hpp" />
+    <ClInclude Include="adapter\OpLogsAdapter.hpp" />
+    <ClInclude Include="adapter\SArrayAdapter.hpp" />
+    <ClInclude Include="adapter\SComboViewAdapter.hpp" />
+    <ClInclude Include="adapter\SensorsAdapter.hpp" />
+    <ClInclude Include="analysis\AnalysisSession.h" />
+    <ClInclude Include="AppFramework.h" />
+    <ClInclude Include="AppFrameworkImpl.h" />
+    <ClInclude Include="database\MysqlClient.h" />
+    <ClInclude Include="database\MysqlConnectionPool.h" />
+    <ClInclude Include="modbus\DeviceBase.h" />
+    <ClInclude Include="extensions\SBlurWindow.h" />
+    <ClInclude Include="extensions\SChartLine.h" />
+    <ClInclude Include="extensions\SChartLogs.h" />
+    <ClInclude Include="extensions\SChartReal.h" />
+    <ClInclude Include="extensions\SChartTime.h" />
+    <ClInclude Include="extensions\SCheckBoxEx.h" />
+    <ClInclude Include="extensions\SCoordAxis.h" />
+    <ClInclude Include="extensions\SDateTimePickerEx.h" />
+    <ClInclude Include="extensions\SInvertCheck.h" />
+    <ClInclude Include="extensions\SKeyEdit.h" />
+    <ClInclude Include="extensions\SMutiImage.h" />
+    <ClInclude Include="extensions\SRotateWindow.h" />
+    <ClInclude Include="extensions\SWinEdit.h" />
+    <ClInclude Include="layout\DiagDlg.h" />
+    <ClInclude Include="layout\FluidInfoDlg.h" />
+    <ClInclude Include="layout\KeyboardDlg.h" />
+    <ClInclude Include="layout\LoginDlg.h" />
+    <ClInclude Include="layout\MainDlg.h" />
+    <ClInclude Include="layout\MessageDlg.h" />
+    <ClInclude Include="layout\RestoreDlg.h" />
+    <ClInclude Include="layout\SystemOptionsDlg.h" />
+    <ClInclude Include="modbus\ModbusDevice.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="res\resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemDef.h" />
+    <ClInclude Include="utils\ConcurrentTaskQueue.h" />
+    <ClInclude Include="utils\HttpClient.hpp" />
+    <ClInclude Include="utils\LockFreeQueue.h" />
+    <ClInclude Include="utils\Logger.h" />
+    <ClInclude Include="utils\NonCopyable.h" />
+    <ClInclude Include="utils\TaskQueue.h" />
+    <ClInclude Include="utils\TcpClient.hpp" />
+    <ClInclude Include="utils\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="cpp.hint" />
+    <None Include="res\soui_res.rc2" />
+    <CustomBuild Include="uires\uires.idx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SOUIPATH)\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="uires\Translator\lang_cn.xml" />
+    <Xml Include="uires\Translator\lang_jp.xml" />
+    <Xml Include="uires\uidef\init.xml" />
+    <Xml Include="uires\values\color.xml" />
+    <Xml Include="uires\values\skin.xml" />
+    <Xml Include="uires\values\string.xml" />
+    <Xml Include="uires\xml\dlg_main.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="uires\image\soui.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

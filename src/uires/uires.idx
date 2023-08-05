@@ -1,0 +1,128 @@
+﻿<resource>
+  <UIDEF>
+    <file name="XML_INIT" path="uidef\init.xml"/>
+  </UIDEF>
+  <values>
+  	<file name="string" path="values\string.xml"/>
+  	<file name="color" path="values\color.xml"/>
+  	<file name="skin" path="values\skin.xml"/>
+  </values>
+  <LAYOUT>
+    <file name="xml_main" path="xml\xml_main.xml"/>
+	<file name="xml_diag" path="xml\xml_diag.xml"/>
+	<file name="xml_fluid_info" path="xml\xml_fluid_info.xml"/>
+	<file name="xml_system_options" path="xml\xml_system_options.xml"/>
+	
+	<file name="xml_login" path="xml\xml_login.xml"/>
+	<file name="xml_system_menu" path="xml\xml_system_menu.xml"/>
+	<file name="xml_home" path="xml\xml_home.xml"/>
+	<file name="xml_home_type" path="xml\xml_home_type.xml"/>
+	<file name="xml_home_real" path="xml\xml_home_real.xml"/>
+	<file name="xml_keyboard" path="xml\xml_keyboard.xml"/>
+	<file name="xml_logs" path="xml\xml_logs.xml"/>
+	<file name="xml_logs_datalogs" path="xml\xml_logs_datalogs.xml"/>
+	<file name="xml_logs_oplogs" path="xml\xml_logs_oplogs.xml"/>
+	<file name="xml_advance" path="xml\xml_advance.xml"/>
+	<file name="xml_advance_debug" path="xml\xml_advance_debug.xml"/>
+	<file name="xml_advance_init" path="xml\xml_advance_init.xml"/>
+	<file name="xml_logs_datalogs_calcdata" path="xml\xml_logs_datalogs_calcdata.xml"/>
+	<file name="xml_logs_datalogs_wbm" path="xml\xml_logs_datalogs_wbm.xml"/>
+	<file name="xml_logs_datalogs_obm" path="xml\xml_logs_datalogs_obm.xml"/>
+	<file name="xml_message" path="xml\xml_message.xml"/>
+	<file name="xml_restore" path="xml\xml_restore.xml"/>
+  </LAYOUT>
+
+  <IMG>
+  	<file name="system.logo" path="image\system\logo.png"/>
+	<file name="system.border" path="image\system\border.png"/>
+	<file name="system.drop" path="image\system\drop.png"/>
+	<file name="system.snapshot" path="image\system\snapshot.png"/>
+	<file name="system.setup" path="image\system\setup.png"/>
+	<file name="system.menu" path="image\system\menu.png"/>
+	<file name="system.bg_menu" path="image\system\bg_menu.png"/>
+	<file name="system.menu_item" path="image\system\menu_item.png"/>
+	<file name="system.home_page" path="image\system\home_page.png"/>
+	<file name="system.end_page" path="image\system\end_page.png"/>
+	<file name="system.prev_page" path="image\system\prev_page.png"/>
+	<file name="system.next_page" path="image\system\next_page.png"/>
+	<file name="system.chk_left" path="image\system\chk_left.png"/>
+	<file name="system.chk_right" path="image\system\chk_right.png"/>
+	<file name="system.block" path="image\system\block.png"/>
+	<file name="system.search" path="image\system\search.png"/>
+	<file name="system.close" path="image\system\close.png"/>
+	<file name="system.ok" path="image\system\ok.png"/>
+	<file name="system.bg_message" path="image\system\bg_message.png"/>
+	<file name="system.warning" path="image\system\warning.png"/>
+	<file name="system.chart_item_120_20" path="image\system\chart_item_120_20.png"/>
+	<file name="system.chart_item_110_30" path="image\system\chart_item_110_30.png"/>
+  
+  	<file name="login.logo" path="image\login\logo.png"/>
+	<file name="login.bg" path="image\login\bg.png"/>
+	<file name="login.img_user" path="image\login\img_user.png"/>
+	<file name="login.img_password" path="image\login\img_password.png"/>
+	<file name="login.btn_close" path="image\login\btn_close.png"/>
+	<file name="login.btn_login" path="image\login\btn_login.png"/>
+	
+	<file name="home.bg_type" path="image\home\bg_type.png"/>
+	<file name="home.block0" path="image\home\block0.png"/>
+	<file name="home.block1" path="image\home\block1.png"/>
+	<file name="home.img_real" path="image\home\img_real.png"/>
+	<file name="home.alert_up" path="image\home\alert_up.png"/>
+	<file name="home.alert_down" path="image\home\alert_down.png"/>
+	<file name="home.btn_units" path="image\home\btn_units.png"/>
+	<file name="home.btn_start" path="image\home\btn_start.png"/>
+	<file name="home.btn_stop" path="image\home\btn_stop.png"/>
+	<file name="home.btn_clean" path="image\home\btn_clean.png"/>
+
+	
+	<file name="keyboard.bg" path="image\keyboard\bg.png"/>
+	<file name="keyboard.backup" path="image\keyboard\backup.png"/>
+	<file name="keyboard.enter" path="image\keyboard\enter.png"/>
+	<file name="keyboard.close" path="image\keyboard\close.png"/>
+	<file name="keyboard.key" path="image\keyboard\key.png"/>
+	
+	<file name="logs.export" path="image\logs\export.png"/>
+	<file name="logs.next_group" path="image\logs\next_group.png"/>
+	<file name="logs.prev_group" path="image\logs\prev_group.png"/>
+	<file name="logs.btn41" path="image\logs\btn41.png"/>
+	<file name="logs.btn51" path="image\logs\btn51.png"/>
+	<file name="logs.btn61" path="image\logs\btn61.png"/>
+	<file name="logs.btnh44" path="image\logs\btnh44.png"/>
+	
+	<file name="advance.pump" path="image\advance\pump.png"/>
+	<file name="advance.model" path="image\advance\model.png"/>
+	<file name="advance.block_item" path="image\advance\block_item.png"/>
+	<file name="advance.bg_item" path="image\advance\bg_item.png"/>
+	
+	<file name="diag.bg" path="image\diag\bg.png"/>
+	<file name="diag.data_bg" path="image\diag\data_bg.png"/>
+	<file name="diag.lights" path="image\diag\lights.png"/>
+	<file name="diag.btn_code" path="image\diag\btn_code.png"/>
+	<file name="diag.btn_time" path="image\diag\btn_time.png"/>
+	<file name="diag.btn_trip" path="image\diag\btn_trip.png"/>
+	<file name="diag.check_alarm" path="image\diag\check_alarm.png"/>
+	<file name="diag.check_comm" path="image\diag\check_comm.png"/>
+	<file name="diag.check_hardware" path="image\diag\check_hardware.png"/>
+	<file name="diag.check_warning" path="image\diag\check_warning.png"/>
+	
+	<file name="fluid_setup.bg" path="image\fluid_setup\bg.png"/>
+	<file name="fluid_setup.bg_combo97" path="image\fluid_setup\bg_combo97.png"/>
+	<file name="fluid_setup.bg_combo238" path="image\fluid_setup\bg_combo238.png"/>
+	<file name="fluid_setup.bg_edit134" path="image\fluid_setup\bg_edit134.png"/>
+	<file name="fluid_setup.bg_edit238" path="image\fluid_setup\bg_edit238.png"/>
+	
+	<file name="system_options.bg" path="image\system_options\bg.png"/>
+	<file name="system_options.browser" path="image\system_options\browser.png"/>
+	<file name="system_options.delete" path="image\system_options\delete.png"/>
+	<file name="system_options.pump" path="image\system_options\pump.png"/>
+	<file name="system_options.combo208" path="image\system_options\combo208.png"/>
+	<file name="system_options.edit208" path="image\system_options\edit208.png"/>
+	<file name="system_options.new" path="image\system_options\new.png"/>
+  </IMG>
+  <ICON>
+    <file name="system.appico" path="image\system\appico.ico"/>
+  </ICON>
+  <translator>
+    <file name="lang_cn"  path="translator\lang_cn.xml"/>
+  </translator>
+</resource>

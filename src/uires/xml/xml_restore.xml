@@ -1,0 +1,12 @@
+﻿<SOUI name="xml_restore" width="780" height="575"  resizable="0" wndType="normal"
+toolWindow="1"
+appWnd="0"
+translucent="1" 
+trCtx="xml_restore"
+>
+  <root cache="1" pos="0,0,-0,-0" skin="system.bg_message">
+	<text pos="50,50,@66,@53" skin="system.warning"/>
+	<text name="des" pos="|-10,|0,@-1,@-1" colorText="#000000" offset="-0.5,-1" multiLines="1" font="size:30" text="Click OK to Restore System!"/>
+	<imgbtn name="btn_restore" skin="home.btn_stop" 	pos="|-10,-106" offset="-0.5,-1" colorTextPush="#FFFFFF" colorText="#FFFFFF" font="size:30" text="RESTORE"/>
+  </root>
+</SOUI>

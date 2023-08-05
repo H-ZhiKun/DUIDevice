@@ -1,0 +1,18 @@
+<include>
+	<rotateWnd name="state_title" pos="0,|0,@50,@200" offset="0,-0.5" colorBkgnd="#A1A1A1" colorText="#FFFFFF" font="size:30" rotate="-90" text="IDLE" msgTransparent="1"/>
+	<img pos="63,27" skin="system.logo" show="1" msgTransparent="1"/>
+	<text name="well_name" pos="-563,27,@373,@70" align="center" colorText="#FFFFFF" font="size:40" colorBkgnd="#2B2B77" msgTransparent="1"/>
+	<text name="datetime" pos="-563,[2,@373,@28" align="center" colorText="#FFFFFF" font="size:24" colorBkgnd="#000000" msgTransparent="1"/>
+	<text name="user_name" pos="[0,{0,@127,@28" align="center" colorText="#000000" font="size:24" text="" colorBkgnd="#CCCCCC" msgTransparent="1"/>
+	<window name="system_chk_home" align="center" checked="1" skin="system.menu" pos="-63,[39,@127,@47" offset="-1,0" colorTextPush="#FFFFFF" colorText="#000000" font="bold:1,size:30" text="Main"/>
+	<window name="system_chk_logs" align="center" skin="system.menu" pos="{0,[20,@127,@47" colorText="#000000" colorTextPush="#FFFFFF" font="bold:1,size:30" text="Logs"/>
+	<window name="system_chk_adv" align="center" skin="system.menu" pos="{0,[20,@127,@47" colorText="#000000" colorTextPush="#FFFFFF" font="bold:1,size:30" text="Adv."/>
+	<checkex name="system_setup" offset="-1,0" skin="system.setup" pos="-63,27,@127,@70"/>
+	<window name="system_menu" show="0" pos="-63,[0,@214,@272" offset="-1,0" skin="system.bg_menu">
+		<imgbtn name="btn_fluid_setup" skin="system.menu_item" pos="2,[15,-2,@51" colorText="#000000" colorTextPush="#FFFFFF" font="bold:1,size:22" text="Fluid Setup"/>
+		<imgbtn name="btn_diag" skin="system.menu_item" pos="2,[0,-2,@51" colorText="#000000" colorTextPush="#FFFFFF" font="bold:1,size:22" text="Diagnosis"/>
+		<imgbtn name="btn_system_options" skin="system.menu_item" pos="2,[0,-2,@51" colorText="#000000" colorTextPush="#FFFFFF" font="bold:1,size:22" text="System Options"/>
+		<imgbtn name="btn_min" skin="system.menu_item" pos="2,[0,-2,@51" colorText="#000000" colorTextPush="#FFFFFF" font="bold:1,size:22" text="Minimize"/>
+		<imgbtn name="btn_logout" skin="system.menu_item" pos="2,[0,-2,@51" colorText="#000000" colorTextPush="#FFFFFF" font="bold:1,size:22" text="Logout"/>
+	</window>
+</include>
